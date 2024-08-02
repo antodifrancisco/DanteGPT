@@ -118,7 +118,7 @@ class GPT(nn.Module):
 
         # Part 2: Instantiate an Huggingface model
 
-        model_hf = GPT2LMHeadModel.from_pretrained("gpt-2")
+        model_hf = GPT2LMHeadModel.from_pretrained("gpt2")
         sd_hf = model_hf.state_dict()
 
         # Part 3: Copy the tensors from HF into our scratch model to ensure compatibility
